@@ -1,0 +1,43 @@
+.talk{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2.productsHeading2{
+    width: 100%;
+    border: none !important;
+    font-size: 60px !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.innerTalk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgba(221, 221, 221, 0.767);
+    justify-content: center;
+    padding: 30px 0;
+}
+.innerTalk p{
+    width: 600px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+.innerTalk a{
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 8px 14px;
+    background:#1273EB;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+@media screen and (max-width: 900px){
+    .innerTalk p{
+        width: 90%;
+    }
+}

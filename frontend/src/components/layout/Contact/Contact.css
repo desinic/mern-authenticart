@@ -1,0 +1,44 @@
+.contactContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: grid;
+  place-items: center;
+  background-color: #070C27;
+  position: fixed;
+}
+
+.mailBtn {
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 2s forwards;
+}
+
+.contactContainer a{
+  text-decoration: none;
+  font-size: 50px;
+}
+
+.mailBtn > h1 {
+  text-decoration: none;
+  font: 200 2vmax "Roboto";
+  padding: 2vmax;
+  color: #ddd;
+}
+
+.mailBtn > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 750px){
+  .btn-con div a img{
+    width: 24px;
+  }
+}

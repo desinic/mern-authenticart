@@ -1,0 +1,103 @@
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: #111633;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(87, 87, 87, 0.658);
+    z-index: 100;
+}
+
+.header ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header ul div{
+    display: flex;
+}
+
+.header ul div li{
+    margin: 0 30px;
+    list-style: none;
+}
+
+.header ul li a{
+    color: rgb(209, 209, 209) !important;
+    text-decoration: none;
+    transition: all 0.3s;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+.header ul li a:hover{
+    color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.header > div{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.header > div a img{
+    width: 60px !important;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.speedDial{
+    position: fixed;
+    right: 3vmax;
+    top: 1vmax;
+    z-index: 1000;
+}
+
+.speedDialIcon{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+.header > a{
+    position: absolute;
+    top: 15px;
+    left: 90px;
+}
+.navbar{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar{
+        display: block;
+    }
+    .header.active{
+        height: 100vh;
+    }
+    .header ul{
+        display: none !important;
+    }
+    .header.active ul{
+        width: 250px;
+        height: 70vh;
+        display: block !important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header.active ul div{
+        display: flex;
+        flex-direction: column;
+    }
+    .header.active ul div li{
+        margin-top: 30px;
+    }
+    .header.active ul div li a{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,158 @@
+.productsHeading {
+  margin: 0vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgb(255, 136, 0);
+  padding: 2vmax 0 5px 0;
+  color: rgba(228, 228, 228, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+
+.hero-products{
+  min-height: 86vh;
+  background-color: #111633;  
+  position: relative;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  justify-content: center;
+  min-height: 30vh;
+  margin-top: 30px;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  padding: 3vmax;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: #070C27;
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 500 0.8vmax "Roboto";
+  color: rgba(221, 221, 221, 0.836);
+  transition: all 0.3s;
+}
+
+.btn-filter{
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  top: -20px;
+  left: 40px;
+  background: #070C27;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.filter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111633;
+  display: flex;
+  justify-content: center;
+}
+
+.filterBox {
+  margin-top: 30px;
+  padding: 20px;
+  width: 35vmax;
+  height: 45vmax;
+  background: #070C27;
+  border-radius: 5px !important;
+}
+
+.MuiTypography-root.MuiTypography-body1{
+  background: transparent !important;
+  color: #fff;
+}
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax;
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: tomato;
+}
+
+.categoryBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.category-link{
+  padding: 10px 25px;
+  background: #111633 !important;
+  color: rgb(219, 219, 219);
+}
+.MuiRating-iconEmpty{
+  color: #1c2346 !important;
+}
+@media screen and (max-width: 600px) {
+
+  .page-link {
+    font: 300 1.7vmax;
+  }
+  .category-link {
+    font: 400 1.8vmax;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .filterBox {
+    width: 50vmax;
+  }
+  
+}
+@media screen and (max-width: 1100px){
+  .filterBox {
+    width: 60vmax;
+  }
+  
+}
+@media screen and (max-width: 950px){
+  .filterBox {
+    width: 80vmax;
+    height: 90vh;
+  }
+  
+}
+@media screen and (max-width: 950px){
+  .filterBox {
+    width: 80vmax;
+    height: 100%;
+  }
+  
+}

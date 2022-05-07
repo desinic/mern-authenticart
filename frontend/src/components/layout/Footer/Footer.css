@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+footer{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: #070C27;
+  padding: 10px;
+  width: 100%;
+}
+
+footer p{
+  color: rgb(163, 163, 163);
+  font-family: "Dancing Script","cursive";
+  font-weight: 600;
+}
+
+footer p > a{
+  color: rgb(255, 162, 41) !important;
+  font-family: "Dancing Script","cursive" !important;
+  font-weight: 600;
+}
+
+footer > div a{
+  margin-right: 10px;
+}
+
+footer > div > a img{
+  width: 24px;
+}
+
+@media screen and (max-width: 650px){
+  footer > div > a img{
+    width: 18px;
+  }
+  footer p{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  footer > div > a img{
+    width: 16px;
+  }
+  footer p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 386px){
+  footer > div > a img{
+    margin-top: 10px;
+  }
+}

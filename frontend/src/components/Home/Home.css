@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Smooch+Sans:wght@400;500;600;700;800;900&display=swap');
+
+.hero{
+  background-color: #111633;
+}
+
+.noProduct{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+.noProduct p{
+  font-size: 36px;
+  color: rgba(255, 166, 0, 0.877);
+  text-decoration: line-through;
+}
+
+.banner {
+  background-color: #070C27;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: center;
+  color: rgb(206, 206, 206);
+  font-weight: 500;
+}
+
+.banner > h1 {
+  margin: 150px 0px 0px 30px;
+  font: 600 50px "Smooch Sans";
+}
+
+.banner > h1::selection{
+  background: #111633;
+  color: rgb(255, 255, 255);
+}
+
+.banner > p {
+  margin: 0px 0px 0px 30px;
+  font: 300 5vmax "Smooch Sans";
+}
+
+.banner > p:nth-child(3){
+  color: rgb(255, 166, 0);
+}
+
+.banner > p::selection{
+  background: #111633;
+  color: rgb(255, 255, 255);
+}
+
+
+.productCard {
+  width: 18vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  padding: 1vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  background-color: #070c27bd;
+  border-radius: 10px;
+}
+
+.productCard > img {
+  width: 100% !important;
+  height: 15vmax !important;
+  border-radius: 10px !important;
+}
+
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productCardSpan {
+  margin: 0.5vmax;
+  font: 300 0.9vmax "Roboto";
+  color: rgb(212, 212, 212);
+  font-weight: 300;
+}
+
+.productCard > p {
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+  padding: 0 15px;
+  color: rgba(226, 226, 226, 0.884);
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: #ffffffe3;
+  padding: 8px 15px;
+  background: #111633;
+  border-radius: 5px;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+
+  .productCard > div > span {
+    margin: 0 0.5vmax;
+    font: 300 1vmax;
+  }
+  .banner h1{
+    font-size: 37px;
+  }
+  .banner p{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .banner h1{
+    font-size: 32px;
+  }
+  .banner p{
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner h1{
+    font-size: 28px;
+  }
+  .banner p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .banner h1{
+    font-size: 25px;
+  }
+  .banner p{
+    font-size: 15px;
+  }
+}
+

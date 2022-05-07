@@ -1,0 +1,46 @@
+.PageNotFound {
+  margin: auto;
+  text-align: center;
+  padding: 10vmax;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 99px);
+  background-color: #111633;
+}
+.PageNotFound > svg {
+  font-size: 7vmax;
+  color: #03071d;
+}
+.PageNotFound > p {
+  font-size: 2vmax;
+}
+.PageNotFound > a {
+  background-color: #070C27;
+  color: white !important;
+  border: none;
+  padding: 1vmax 3vmax;
+  cursor: pointer;
+  font: 400 1vmax "Roboto";
+  text-decoration: none;
+  margin: 2vmax;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .PageNotFound > a {
+    padding: 3vw 6vw;
+    font: 400 4vw "Roboto";
+    margin: 2vmax;
+  }
+
+  .PageNotFound > svg {
+    font-size: 20vw;
+  }
+  .PageNotFound > p {
+    margin: 2vmax;
+    font-size: 5vw;
+  }
+}

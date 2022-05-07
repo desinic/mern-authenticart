@@ -1,0 +1,106 @@
+.dashboard {
+  width: 100vw;
+  height: calc(100vh - 99px);
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  
+}
+
+.dashboardContainer {
+  border-left: 1px solid rgba(0, 0, 0, 0.13);
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 0;
+  background-color: #070C27;
+}
+
+.dashboardContainer > h1 {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "Roboto";
+  text-align: center;
+  width: 50%;
+  padding: 1.5rem;
+  margin: auto;
+}
+
+.dashboardSummary {
+  margin: 2rem 0;
+}
+
+.dashboardSummary > div {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+.SpeedDialtooltipexample-actions{
+  background: red !important;
+}
+.dashboardSummary > div > p {
+  background-color: rgba(204, 65, 0, 0.932);
+  color: white;
+  font: 300 1.3rem "Roboto";
+  text-align: center;
+  padding: 1.5rem;
+  width: 100%;
+}
+.dashboardSummaryBox2{
+  background: #070C27 !important;
+}
+.dashboardSummaryBox2 > a {
+  color: rgb(255, 255, 255);
+  font: 300 2rem "Roboto";
+  text-align: center;
+  text-decoration: none;
+  padding: 1.5rem;
+  width: 10vmax;
+  height: 10vmax;
+  margin: 2rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dashboardSummaryBox2 > a:first-child {
+  background-color: rgb(255, 255, 255);
+  color: #070C27 !important;
+}
+
+.dashboardSummaryBox2 > a:last-child {
+  background-color:rgba(36, 250, 107, 0.788);
+  color:  #111633 !important;
+}
+
+.lineChart {
+  width: 80%;
+  margin: auto;
+  background: #111633 !important;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.doughnutChart {
+  width: 30vmax;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboardContainer {
+    border-left: none;
+  }
+
+  .dashboardSummary > div > p {
+    margin: 0;
+  }
+
+  .dashboardSummaryBox2 > a {
+    padding: 0.5rem;
+    margin: 1rem;
+    font: 300 0.9rem "Roboto";
+  }
+}

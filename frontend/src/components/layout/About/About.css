@@ -1,0 +1,117 @@
+.about{
+    background: #070C27;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.about-container{
+    padding: 75px 50px;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+}
+
+.about-me{
+    width: 100%;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.about-me img{
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.about-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+.about-card{
+    background: #111633;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-card h5{
+    font-size: 18px;
+}
+.about-card small{
+    color: rgba(221, 221, 221, 0.822);
+}
+.productsHeading{
+    border: none !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 40px !important;
+}
+
+
+.about-content p{
+    color: rgba(204, 204, 204, 0.877);
+    padding: 25px 0;
+    font-size: 18px;
+}
+.about-content a{
+    padding: 10px 20px;
+    background: #1273EB;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3 ease;
+}
+.about-content a:hover{
+    background: #1274ebcc;
+}
+
+@media screen and (max-width: 1200px) {
+    .about-card h5{
+        font-size: 14px;
+    }
+    .about-card small{
+        color: rgba(221, 221, 221, 0.822);
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1156px) {
+    .about-card{
+        padding: 1rem;
+    }
+    .about-card small{
+        color: rgba(221, 221, 221, 0.822);
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about-container{
+        display: block;
+    }
+    .about-cards{
+        margin-top: 30px;
+    }
+    .productsHeading{
+        font-size: 35px !important;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .about-cards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: .5rem;
+    }
+    .productsHeading{
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about-cards{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+    }
+}
