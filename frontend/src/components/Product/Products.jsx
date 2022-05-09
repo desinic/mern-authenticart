@@ -52,7 +52,7 @@ const Products = () => {
   }
 
   const closeFilter = (e) => {
-    if ( filterRef.current === e.target ) {
+    if ( filterRef.current !== e.target ) {
       setOpen(false)
     }
   }
