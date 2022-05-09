@@ -55,6 +55,9 @@ const Products = () => {
     if ( filterRef.current !== e.target ) {
       setOpen(false)
     }
+    if ( filterRef.current === e.target ) {
+      setOpen(false)
+    }
   }
 
   useEffect( () => {
