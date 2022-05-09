@@ -41,14 +41,25 @@ const UpdateProduct = () => {
     const [imagesPreview, setImagesPreview] = useState([]);
 
     const categories = [
-        "Laptop",
-        "Footwear",
-        "Bottom",
-        "Tops",
-        "Attire",
-        "Camera",
-        "SmartPhones",
-    ];
+        "Logo Design",
+        "Business Card Design",
+        "Letterhead Design",
+        "Signage Design",
+        "Flyer Design",
+        "Postcard Design",
+        "Brchure Design",
+        "Poster Design",
+        "Advertisement Design",
+        "Catalogue Design",
+        "Envelope Design",
+        "Magazine Design",
+        "Menu Design",
+        "Newspaper Ad Design",
+        "Print Design",
+        "Sticker Design",
+        "Resume Design",
+        "Word Temlate Design",
+    ]
 
     const productId = id;
 
